@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order postcards🎊</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Georgia;
+        font-size: 48px;
+        font-weight: lighter;
+        color: #b8860b;
+      }
+      h2 {
+        text-align: center;
+        font-size: 36px;
+        font-family: Georgia;
+        font-weight: lighter;
+        color: #da9100;
+      }
+      img {
+        display: block;
+        text-align: center;
+        width: 700px;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #860111;
+        font-weight: bold;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #b8860b;
+        background-color: black;
+        border-radius: 30px 30px 30px 30px;
+        border: 3px solid #b8860b;
+        font-size: 22px;
+        padding: 20px;
+        box-shadow: 1px 3px 1px;
+        transition: all 90ms ease-in-out;
+      }
+      button:hover {
+        color: #b8860b;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+      div {
+        background: linear-gradient(to right, #f7e98a, #c9aa3c);
+        margin-left: 320px;
+        margin-right: 320px;
+        border: 8px double;
+      }
+      p {
+        display: block;
+        font-size: 18px;
+        font-family: "Times New Roman";
+        line-height: 1.5;
+        padding: 10px;
+        text-align: center;
+        font-style: oblique;
+      }
+      body {
+        margin: 0 auto;
+      }
+      .leftimage {
+        display: block;
+        text-align: left;
+        float: left;
+        width: 15%;
+      }
+      .rightimage {
+        display: block;
+        text-align: right;
+        float: right;
+        width: 10%;
+      }
+
+      .name {
+        display: block;
+        text-align: center;
+        font-family: monospace;
+        opacity: 0.6;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #ba160c;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/873/original/june-celebration-2323929_1280.png?1702376702"
+        alt="flowers"
+      />
+
+      <h1>🎉 Happy New Year🎉</h1>
+      <h2><strong>2024</strong> is just a few weeks away!⏰</h2>
+
+      <p>
+        Time is swiftly passing, and we find ourselves standing on the threshold
+        of a new year. With only a few weeks remaining, what better way to
+        embrace the upcoming journey into 2024 than by sending heartfelt
+        postcards to your beloved ones? As the calendar turns, let's seize the
+        opportunity to express our love, appreciation, and warm wishes.
+      </p>
+      <a
+        href="https://www.homemade-gifts-made-easy.com/new-year-wishes.html#:~:text=Wishing%20you%20a%20very%20happy,fill%20your%20heart%20with%20joy."
+        target="_blank"
+        >Click here to discover a treasure trove of ideas that will inspire your
+        heartfelt words for your beloved ones.
+      </a>
+      <p>
+        Imagine the joy on their faces as they receive a tangible token of your
+        affection, carefully crafted with personalized messages and beautiful
+        imagery. With every postcard, you'll be creating unforgettable moments
+        and strengthening the bonds that matter most. Don't wait any longer,
+        order your postcards today and ensure your heartfelt sentiments reach
+        their destination just in time for the new year. Let the countdown
+        begin, as we eagerly anticipate the joy your postcards will bring to
+        those you hold dear.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/872/original/anniversary-157248_1280.png?1702376668"
+        class="leftimage"
+        alt="balloons and glasses"
+      />
+      <br /><br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/874/original/balloons-1903002_1280.png?1702377846"
+        class="rightimage"
+        alt="balloons"
+      />
+
+      <button>Order Now🎁</button>
+
+      <span class="name"> This page is created by Bethlehem mitiku</span>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("Hello👋🏽, what is your name?");
+        alert("Hi " + name + "!");
+
+        let city = prompt("Where do you live?");
+        let email = prompt("Can you tell us your email, please?📧");
+
+        let quote = prompt(
+          "\n\n1.If you have a quote or a word that you want to say to your beloved one, type 'Yes'. \n\n2.If you don't have an idea, type 'No'."
+        );
+
+        if (quote.toLowerCase() === "yes") {
+          let word = prompt("Enter your words here.📝");
+          alert(word + ", will be printed on your postcard.");
+        } else {
+          let answer = prompt("For whom do you want to order the postcard?💌");
+          let expression = prompt(
+            "Choose the sentiment you'd like to express on the postcard:\n\n1. Your love with a Happy New Year wish.\n2. Your respect with a Happy New Year wish.\n3. Your gratitude with a Happy New Year wish.\n\nPlease enter the corresponding number:"
+          );
+        }
+
+        alert(
+          "🎇Good choice! We will contact you through email. Happy New Year!🎈🎇"
+        );
+      }
+
+      let orderButton = document.querySelector("button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
